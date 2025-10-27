@@ -2,47 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MP3 Song List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Researchers for Writers Group</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 2em;
-      
-     background-color: #6a0dad;  /* Purple tone */
-      
-           
-      background-repeat: repeat;
-      background-size: cover;
+      background-color: #6a0dad;  /* Purple tone */
       color: white;
     }
+
     h1 {
       color: #ffd700; /* Gold for contrast */
       text-shadow: 2px 2px 4px #000;
+      margin-bottom: 1em;
     }
-    .song {
-      margin-bottom: 20px;
-      
-       background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black box */
-                 
-      padding: 1em;
+
+    .section {
+      background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black box */
+      padding: 1.5em;
       border-radius: 10px;
+      max-width: 600px;
+      margin-bottom: 2em;
     }
-    audio {
-      width: 100%;
+
+    .download-link {
+      display: inline-block;
+      margin-top: 1em;
+      padding: 10px 20px;
+      background-color: #ffd700; /* Gold button */
+      color: #6a0dad; /* Purple text */
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .download-link:hover {
+      background-color: #ffea00; /* Slightly brighter on hover */
     }
   </style>
 </head>
 <body>
-  
 
-  <div class="research section">
-    <p>Researchers for Writers Group</p>
- 
-     <a href="wrg.docx" download>Download the document</a>
- 
+  <h1>Researchers for Writers Group</h1>
+
+  <div class="section">
+    <p>Download the research document for your reference:</p>
+    <a class="download-link" href="wrg.docx" download>Download Document</a>
   </div>
 
- 
 </body>
 </html>
